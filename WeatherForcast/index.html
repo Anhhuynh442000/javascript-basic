@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="JS/all.min.js"></script>
+    <script src="JS/moment.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" name="search-city" id="search-input" placeholder="Nhập tên thành phố tìm">
+            </div>
+            <div class="infor-wrapper">
+                <p class="city-name">--</p>
+                <p class="weather-state">--</p>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-image" class="icon-weather">
+                <p class="temperature">--</p>
+            </div>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">MT mọc</div>
+                    <div class="sunrise">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">MT lặn</div>
+                    <div class="sunset">--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ ẩm</div>
+                    <div class="value"><span class="humidity">--</span>%</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió</div>
+                    <div class="value"><span class="wind-speed">--</span>km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

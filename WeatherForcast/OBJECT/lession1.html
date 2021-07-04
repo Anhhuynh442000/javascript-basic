@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <!-- <script>
+        var a = {
+            firtName : 'Huỳnh',
+            lastName : 'Kỳ Anh',
+            age : 21,
+            fullName : function(){
+                return a.firtName + " " + a.lastName;
+            }
+        }
+        for(var key in a)
+        {
+            console.log(a[key]);
+            if(key=='fullName'){
+                console.log(a[key]())
+            }
+        }
+        
+    </script> -->
+    <script>
+        function Person(firstName, lastName, age)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.getName = function(name){
+                return this.firstName = name;
+            }
+        }
+        Person.prototype.point = 18;
+        Person.prototype.class = function(){
+            return 'DHHTTT14';
+        }
+        var user = new Person('Huỳnh', 'Kỳ Anh', 18);
+        user.email = 'power1999.net@gmail.com';
+
+        console.log(user['class']());
+
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
